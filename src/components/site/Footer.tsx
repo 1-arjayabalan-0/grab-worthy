@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'wouter';
+import Link from "next/link";
 import { categories } from '@/data/categories';
 import { NewsletterCTA } from './NewsletterCTA';
 
@@ -9,7 +9,7 @@ export function Footer() {
       <div className="container mx-auto px-4 py-16 md:py-24">
         <div className="grid grid-cols-1 md:grid-cols-12 gap-12 lg:gap-8">
           <div className="md:col-span-4 lg:col-span-5">
-            <h3 className="font-serif text-2xl mb-4 text-foreground">Useful Discoveries</h3>
+            <h3 className="font-serif text-2xl mb-4 text-foreground">Grab Worthy</h3>
             <p className="text-muted-foreground leading-relaxed max-w-sm mb-6">
               A quietly luxurious editorial magazine recommending practical Amazon finds for the home, kitchen, desk, organization, beauty, travel, and lifestyle.
             </p>
@@ -17,7 +17,7 @@ export function Footer() {
               As an Amazon Associate we earn from qualifying purchases. This means we may receive a small commission if you buy through our links, at no extra cost to you.
             </p>
           </div>
-          
+
           <div className="md:col-span-4 lg:col-span-3">
             <h4 className="font-serif text-lg mb-6">Explore</h4>
             <ul className="space-y-3">
@@ -35,18 +35,18 @@ export function Footer() {
               </li>
             </ul>
           </div>
-          
+
           <div className="md:col-span-4 lg:col-span-4">
             <NewsletterCTA variant="minimal" />
           </div>
         </div>
-        
+
         <div className="mt-16 pt-8 border-t border-border flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-muted-foreground">
           <div className="flex gap-4">
             <Link href="/about" className="hover:text-foreground transition-colors">About Us</Link>
             <Link href="/contact" className="hover:text-foreground transition-colors">Contact</Link>
           </div>
-          <p>&copy; {new Date().getFullYear()} Useful Discoveries Editorial. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Grab Worthy Editorial. All rights reserved.</p>
         </div>
       </div>
     </footer>

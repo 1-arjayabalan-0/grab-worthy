@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useRef, useState, useEffect } from 'react';
 import { Product } from '@/data/products';
 import { ChevronLeft, ChevronRight } from 'lucide-react';

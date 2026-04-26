@@ -1,32 +1,35 @@
-import React from 'react';
-import { Link } from 'wouter';
-import { BlogPost } from '@/data/blogs';
-import { getCategoryBySlug } from '@/data/categories';
+import React from "react";
+import Link from "next/link";
+import { BlogPost } from "@/data/blogs";
+import { getCategoryBySlug } from "@/data/categories";
 
-export function EditorialArticleCard({ 
-  article, 
-  variant = 'medium' 
-}: { 
+export function EditorialArticleCard({
+  article,
+  variant = "medium",
+}: {
   article: BlogPost;
-  variant?: 'large' | 'medium' | 'small';
+  variant?: "large" | "medium" | "small";
 }) {
   const category = getCategoryBySlug(article.category);
-  
-  if (variant === 'large') {
+
+  if (variant === "large") {
     return (
       <article className="group cursor-pointer grid grid-cols-1 md:grid-cols-12 gap-6 items-center">
         <div className="md:col-span-7 overflow-hidden bg-muted">
           <Link href={`/blog/${article.slug}`}>
-            <img 
-              src={article.featuredImage} 
-              alt={article.title} 
+            <img
+              src={article.featuredImage}
+              alt={article.title}
               className="w-full h-full object-cover aspect-[4/3] transition-transform duration-700 group-hover:scale-105"
               loading="lazy"
             />
           </Link>
         </div>
         <div className="md:col-span-5 flex flex-col justify-center px-4 md:pl-8 md:pr-0">
-          <Link href={`/category/${category?.slug}`} className="text-xs uppercase tracking-widest text-muted-foreground mb-4 hover:text-foreground transition-colors">
+          <Link
+            href={`/category/${category?.slug}`}
+            className="text-xs uppercase tracking-widest text-muted-foreground mb-4 hover:text-foreground transition-colors"
+          >
             {category?.name}
           </Link>
           <Link href={`/blog/${article.slug}`}>
@@ -45,19 +48,22 @@ export function EditorialArticleCard({
     );
   }
 
-  if (variant === 'small') {
+  if (variant === "small") {
     return (
       <article className="group cursor-pointer flex flex-col gap-4">
         <Link href={`/blog/${article.slug}`} className="overflow-hidden bg-muted">
-          <img 
-            src={article.featuredImage} 
-            alt={article.title} 
+          <img
+            src={article.featuredImage}
+            alt={article.title}
             className="w-full h-full object-cover aspect-[4/3] transition-transform duration-700 group-hover:scale-105"
             loading="lazy"
           />
         </Link>
         <div>
-          <Link href={`/category/${category?.slug}`} className="text-[10px] uppercase tracking-widest text-muted-foreground mb-2 block hover:text-foreground transition-colors">
+          <Link
+            href={`/category/${category?.slug}`}
+            className="text-[10px] uppercase tracking-widest text-muted-foreground mb-2 block hover:text-foreground transition-colors"
+          >
             {category?.shortLabel}
           </Link>
           <Link href={`/blog/${article.slug}`}>
@@ -76,15 +82,18 @@ export function EditorialArticleCard({
   return (
     <article className="group cursor-pointer flex flex-col gap-4">
       <Link href={`/blog/${article.slug}`} className="overflow-hidden bg-muted">
-        <img 
-          src={article.featuredImage} 
-          alt={article.title} 
+        <img
+          src={article.featuredImage}
+          alt={article.title}
           className="w-full h-full object-cover aspect-[4/3] transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
         />
       </Link>
       <div>
-        <Link href={`/category/${category?.slug}`} className="text-xs uppercase tracking-widest text-muted-foreground mb-3 block hover:text-foreground transition-colors">
+        <Link
+          href={`/category/${category?.slug}`}
+          className="text-xs uppercase tracking-widest text-muted-foreground mb-3 block hover:text-foreground transition-colors"
+        >
           {category?.shortLabel}
         </Link>
         <Link href={`/blog/${article.slug}`}>
