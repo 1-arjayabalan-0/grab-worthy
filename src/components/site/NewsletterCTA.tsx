@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState } from 'react';
 import { ArrowRight } from 'lucide-react';
 
@@ -31,7 +33,7 @@ export function NewsletterCTA({ variant = 'default' }: { variant?: 'default' | '
         One exceptional find, a few quiet thoughts on living well, and the best of the week's discoveries. No spam, ever.
       </p>
       
-      <form onSubmit={handleSubmit} className={`flex gap-2 ${variant === 'default' ? 'max-w-md mx-auto' : ''}`}>
+      <form onSubmit={handleSubmit} className={`flex gap-2 ${variant === 'default' ? 'sm:flex-row flex-col max-w-md mx-auto' : ''}`}>
         <input
           type="email"
           placeholder="Your email address"
