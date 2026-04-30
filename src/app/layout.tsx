@@ -2,7 +2,7 @@ export const dynamic = "force-dynamic";
 
 import { Inter, Fraunces } from "next/font/google";
 import type { Metadata } from "next";
-
+import { Analytics } from "@vercel/analytics/next"
 const inter = Inter({
   subsets: ["latin"],
   variable: "--app-font-sans",
@@ -47,6 +47,7 @@ export default function RootLayout({
           <Toaster />
         </TooltipProvider>
       </body>
+      <Analytics />
     </html>
   );
 }
