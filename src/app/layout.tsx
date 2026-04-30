@@ -27,7 +27,10 @@ export const metadata: Metadata = {
   },
   description:
     "A quietly luxurious editorial magazine recommending practical Amazon finds for the home, kitchen, desk, organization, beauty, travel, and lifestyle.",
-  metadataBase: new URL("https://grab-worthy.com"),
+  metadataBase: new URL("https://grabworthy.codarivu.com"),
+  verification: {
+    google: 'cWbG2nIb2Zeyu4_3DjbZQERidDmzsMfJTLcl2Ih0ED8',
+  }
 };
 
 export default function RootLayout({
