@@ -16,7 +16,7 @@ export default function Contact() {
       </p>
       <div className="bg-card border border-border p-8 text-center">
         <p className="text-muted-foreground">
-          Email: <a href="mailto:hello@grab-worthy.com" className="text-primary hover:underline">hello@grab-worthy.com</a>
+          Email: <a href="mailto:grabworthy-support@codarivu.com" className="text-primary hover:underline">grabworthy-support@codarivu.com</a>
         </p>
       </div>
     </div>
