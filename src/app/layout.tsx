@@ -50,7 +50,11 @@ export default function RootLayout({
           <Toaster />
         </TooltipProvider>
       </body>
-      <Analytics />
+      {
+        process.env.NEXT_ENV === "production" && (
+          <Analytics />
+        )
+      }
     </html>
   );
 }
