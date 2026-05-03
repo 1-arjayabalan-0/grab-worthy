@@ -17,6 +17,93 @@ const placeholderLink = "https://www.amazon.com/dp/PLACEHOLDER";
 export const products: Product[] = [
   // ---------------------- HOME DECOR ----------------------
   {
+    id: "hoobro-blanket-ladder",
+    productName: "HOOBRO 5-Tier Blanket Ladder",
+    image: "/images/articles/home-decor-2/hoobro-blanket-ladder.jpg",
+    shortDescription:
+      "5-tier wall-leaning towel rack with 4 removable hooks for blankets, towels, scarves, and clothes. Rustic brown and black finish.",
+    whyPeopleLoveIt:
+      "A space-saving wall-leaning design that adds rustic charm while providing ample storage for blankets, towels, and decorative items.",
+    benefits: [
+      "5-tier design with 4 removable hooks",
+      "Sturdy engineered wood and metal construction",
+      "Rustic brown and black finish",
+      "Anti-tip kit included for safety",
+      "Fits living rooms, bedrooms, and bathrooms",
+    ],
+    affiliateLink: "https://amzn.to/4cYjrUn",
+    editorPick: true,
+    budgetPick: false,
+    category: "home-decor",
+    priceHint: "Premium Pick, Under ₹12,000",
+  },
+  {
+    id: "outnili-wall-mount-organizer",
+    productName: "OUTNILI Wall Mount Tool Organizer",
+    image: "/images/articles/home-decor-2/outnili-wall-mount-organizer.jpg",
+    shortDescription:
+      "Wall-mounted organizer with 4 rubber roller clips and 4 hooks for mops, brooms, and cleaning tools. Rustic wood and metal design.",
+    whyPeopleLoveIt:
+      "Keeps cleaning tools organized and off the floor while adding a touch of rustic charm to your garage, laundry room, or kitchen.",
+    benefits: [
+      "4 adjustable rubber roller clips",
+      "4 utility hooks included",
+      "Rustic wood and metal design",
+      "Easy wall-mount installation",
+      "Fits garage, laundry room, closet, kitchen",
+    ],
+    affiliateLink: "https://amzn.to/3QC03VV",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Best Pick, Under ₹5,500",
+  },
+  {
+    id: "olanly-chenille-bath-rug",
+    productName: "OLANLY Soft Chenille Bath Rug",
+    image: "/images/articles/home-decor-2/olanly-chenille-bath-rug.jpg",
+    shortDescription:
+      "Extra soft and absorbent chenille bath rug with quick-dry rubber backing. Machine washable and OEKO-TEX certified.",
+    whyPeopleLoveIt:
+      "Ultra-soft chenille material wraps your feet in cozy comfort while keeping your bathroom floor dry and protected.",
+    benefits: [
+      "Ultra-soft chenille material",
+      "Quick-dry rubber backing",
+      "Machine washable and fade-resistant",
+      "OEKO-TEX STANDARD 100 certified",
+      "Perfect for bathroom floor, tub, or shower",
+    ],
+    affiliateLink: "https://amzn.to/3OZjHKL",
+    editorPick: true,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Best Value, Under ₹5,600",
+  },
+  {
+    id: "yikbik-rgb-floor-lamp",
+    productName: "YIKBIK RGB Floor Lamp with Bluetooth App & Remote",
+    image: "/images/articles/home-decor-2/yikbik-rgb-floor-lamp.jpg",
+    shortDescription:
+      "Smart RGB floor lamp with 16 million colors, Bluetooth app & 65 inch remote control. Music sync and timer function for living room and bedroom.",
+    whyPeopleLoveIt:
+      "Create stunning ambient lighting with 300+ modes and music sync that dances with your favorite tunes. Perfect for gaming rooms, movie nights, and parties.",
+    benefits: [
+      "16 million colors with RGB+IC technology",
+      "96 LED beads with low power consumption",
+      "Bluetooth app & remote control (5-30m range)",
+      "Music sync mode - lights dance with rhythm",
+      "Timer function for automatic on/off",
+      "Height adjustable - 65 inches with 4 detachable segments",
+      "Aluminum alloy shell for durability",
+      "90-day return policy",
+    ],
+    affiliateLink: "https://amzn.to/3QBNj1w",
+    editorPick: true,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "under ₹2,000",
+  },
+  {
     id: "floating-shelves-set",
     productName: "Set of 3 Wall Mounted Floating Shelves",
     image: "/images/articles/home-decor/Set-of-3-Wall-Mounted-Floating-Shelves.jpg",
@@ -115,6 +202,281 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Under ₹700",
+  },
+  {
+    id: "sehaz-artworks-stylish-wall-decor",
+    productName: "Sehaz Artworks Home Decoration Items Stylish",
+    image: "/images/articles/kitchen-decor-1/sehaz-artworks-stylish-wall-decor.jpg",
+    shortDescription:
+      "Stylish wall hanging decoration for living room and kitchen. Premium finish with modern design.",
+    whyPeopleLoveIt:
+      "This stylish wall decor piece transforms any blank wall into a stunning focal point. The modern design works beautifully in both living rooms and kitchens.",
+    benefits: [
+      "Modern stylish design",
+      "Perfect for living room and kitchen",
+      "Easy wall mounting",
+      "Premium quality finish",
+      "Adds character to any space",
+    ],
+    affiliateLink: "https://amzn.to/4dlYAM4",
+    editorPick: true,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹300",
+  },
+  {
+    id: "sehaz-wall-hanging-decoration",
+    productName: "Sehaz Artworks Wall Hanging Decoration",
+    image: "/images/articles/kitchen-decor-1/sehaz-wall-hanging-decoration.jpg",
+    shortDescription:
+      "Elegant wall hanging for home decoration. Rustic finish perfect for living room and kitchen.",
+    whyPeopleLoveIt:
+      "This wall hanging brings a touch of elegance to any room. The rustic finish adds warmth and character to your living space.",
+    benefits: [
+      "Elegant rustic design",
+      "Versatile for multiple rooms",
+      "Lightweight and easy to hang",
+      "Quality construction",
+      "Great value for money",
+    ],
+    affiliateLink: "https://amzn.to/4dloVKg",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹200",
+  },
+  {
+    id: "funny-kitchen-hindi-quote",
+    productName: "Funny Kitchen Wall Hanging Hindi Quote",
+    image: "/images/articles/kitchen-decor-1/funny-kitchen-hindi-quote.jpg",
+    shortDescription:
+      "Wooden wall décor with quirky Hindi quote. Perfect for Indian homes and desi kitchen decoration.",
+    whyPeopleLoveIt:
+      "Add some desi charm to your kitchen with this witty Hindi quote wall art. It's the perfect blend of humor and tradition that makes any Indian home feel more personal.",
+    benefits: [
+      "Quirky Hindi quote",
+      "Wooden construction",
+      "Perfect for Indian kitchens",
+      "Unique gifting option",
+      "Adds personality to walls",
+    ],
+    affiliateLink: "https://amzn.to/48BxNJ0",
+    editorPick: true,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹200",
+  },
+  {
+    id: "oxmic-wood-display-riser",
+    productName: "OXMIC Wood Display Riser Stand",
+    image: "/images/articles/kitchen-decor-1/oxmic-wood-display-riser.jpg",
+    shortDescription:
+      "Wooden display riser shelf for kitchen counter. 2-tier countertop shelf for spices, makeup, and decor.",
+    whyPeopleLoveIt:
+      "This wooden display riser is more than just wall decor — it's a versatile counter organizer that doubles your display space while adding warmth to your kitchen.",
+    benefits: [
+      "2-tier design maximizes space",
+      "Versatile for kitchen or vanity",
+      "Beautiful brown wood finish",
+      "Sturdy construction",
+      "Great for displaying items",
+    ],
+    affiliateLink: "https://amzn.to/4u6vVAV",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹200",
+  },
+  {
+    id: "artvibes-mummy-ka-dhaba-wall-art",
+    productName: "Artvibes Mummy Ka Dhaba Printed Wooden Wall Art",
+    image: "/images/articles/kitchen-decor-1/artvibes-mummy-ka-dhaba-wall-art.jpg",
+    shortDescription:
+      "Printed wooden wall art for cafe, kitchen, restaurants. Modern artwork with kitchen quotes.",
+    whyPeopleLoveIt:
+      "This quirky Mummy Ka Dhaba wall art brings instant character to any kitchen or dining space. It's the kind of conversation piece that makes visitors smile.",
+    benefits: [
+      "Fun kitchen-themed design",
+      "Perfect for cafes and restaurants",
+      "High-quality wooden print",
+      "Modern artwork aesthetic",
+      "Unique gift item",
+    ],
+    affiliateLink: "https://amzn.to/4cNn7cU",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹200",
+  },
+  // ---------------------- MAKEUP ORGANIZERS ----------------------
+  {
+    id: "jialto-rotating-makeup-organizer",
+    productName: "360° Rotating Makeup Organizer for Dressing Table",
+    image: "/images/articles/organizers-1/jialto-rotating-makeup-organizer.jpg",
+    shortDescription:
+      "2-layer rotating makeup organizer with drawers for dressing table, cosmetic and skincare storage. Mint green finish.",
+    whyPeopleLoveIt:
+      "The 360° rotating design lets you access every product with a spin. Perfect for keeping makeup and skincare organized and within reach on your dressing table.",
+    benefits: [
+      "360° rotating base for easy access",
+      "2-layer design with drawers",
+      "Perfect for eyeshadow palettes, lipsticks, mascaras",
+      "Sturdy construction with mint green finish",
+      "Ideal for dressing table or vanity",
+    ],
+    affiliateLink: "https://amzn.to/48Dau1y",
+    editorPick: true,
+    budgetPick: false,
+    category: "home-decor",
+    priceHint: "Premium Pick, Under ₹600",
+  },
+  {
+    id: "jialto-bathroom-organizer-no-drill",
+    productName: "JIALTO Bathroom Organizer Without Drill",
+    image: "/images/articles/organizers-1/jialto-bathroom-organizer-no-drill.jpg",
+    shortDescription:
+      "Wall-mounted bathroom organizer with corner and soap holder. No drilling required - adhesive mounting. Black finish.",
+    whyPeopleLoveIt:
+      "Keep your bathroom organized without damaging walls. The adhesive mounting system holds securely while keeping essentials within reach.",
+    benefits: [
+      "No drilling required - adhesive mounting",
+      "Includes corner and soap holder",
+      "Suitable for various smooth surfaces",
+      "Black finish adds sleek look",
+      "Perfect for bathrooms and kitchens",
+    ],
+    affiliateLink: "https://amzn.to/4tNBeoz",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Best Value, Under ₹550",
+  },
+  {
+    id: "zuku-storage-box-basket-4pcs",
+    productName: "Zuku Storage Box Basket 4Pcs",
+    image: "/images/articles/organizers-1/zuku-storage-box-basket-4pcs.jpg",
+    shortDescription:
+      "Plastic storage box basket for bathroom, toys, cosmetics, and accessories. White finish. Set of 4 pieces.",
+    whyPeopleLoveIt:
+      "Versatile storage baskets that work anywhere - bathroom, bedroom, or kitchen. The set of 4 lets you organize multiple areas efficiently.",
+    benefits: [
+      "Set of 4 pieces",
+      "Versatile for various rooms",
+      "Stackable design",
+      "Lightweight yet sturdy",
+      "Great for toys, cosmetics, accessories",
+    ],
+    affiliateLink: "https://amzn.to/3OIyGJc",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Budget Pick, Under ₹250",
+  },
+  {
+    id: "misamo-aluminium-bathroom-shelf",
+    productName: "Misamo Enterprise 2 Pcs Aluminium Bathroom Wall Shelf",
+    image: "/images/articles/organizers-1/misamo-aluminium-bathroom-shelf.jpg",
+    shortDescription:
+      "30cm adhesive wall-mounted storage rack with installation kit. Black finish. Waterproof design.",
+    whyPeopleLoveIt:
+      "A sleek, waterproof wall shelf that mounts easily without tools. The adhesive backing holds securely on smooth surfaces.",
+    benefits: [
+      "30cm width - perfect for small spaces",
+      "Adhesive mounting - no tools needed",
+      "Waterproof construction",
+      "Includes installation kit",
+      "Suitable for bathroom or kitchen",
+    ],
+    affiliateLink: "https://amzn.to/4tQASO3",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹550",
+  },
+  // ---------------------- BEDROOM DECOR ACCESSORIES ----------------------
+  {
+    id: "homesake-signature-rustic-table-lamp",
+    productName: "Homesake Signature Rustic Table Lamp with Jute Drum Shade",
+    image: "/images/articles/bathroom-decor-organizer-1/homesake-signature-rustic-table-lamp.jpg",
+    shortDescription:
+      "Rustic table lamp with rope distress blue finish and jute drum shade. Perfect for farmhouse bedrooms and home offices.",
+    whyPeopleLoveIt:
+      "This rustic lamp brings warmth and coziness to any bedroom. The jute drum shade diffuses light beautifully, creating a soft glow perfect for winding down.",
+    benefits: [
+      "Rope distress blue finish adds rustic charm",
+      "Jute drum shade provides warm, diffused light",
+      "Perfect for bedside tables or nightstands",
+      "Suitable for living rooms and home offices",
+      "Creates a cozy, relaxing atmosphere",
+    ],
+    affiliateLink: "https://amzn.to/42fvuI2",
+    editorPick: true,
+    budgetPick: false,
+    category: "home-decor",
+    priceHint: "Premium Pick, Under ₹1,400",
+  },
+  {
+    id: "artvibes-cute-couple-wall-hanging",
+    productName: "Artvibes Cute Couple Wooden Wall Hanging",
+    image: "/images/articles/bathroom-decor-organizer-1/artvibes-cute-couple-wall-hanging.jpg",
+    shortDescription:
+      "Adorable wooden wall hanging with cute couple design and heart-shaped frames. Perfect Valentine's gift or decorative piece.",
+    whyPeopleLoveIt:
+      "This whimsical wall hanging adds a playful, romantic touch to any bedroom. The wooden construction gives it a handcrafted feel that stands out.",
+    benefits: [
+      "Cute couple design with heart frames",
+      "Wooden construction with geometric patterns",
+      "Perfect for bedrooms, living rooms, or nurseries",
+      "Great as a Valentine's gift for partners",
+      "Adds personality and charm to walls",
+    ],
+    affiliateLink: "https://amzn.to/4dkVbx5",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹200",
+  },
+  {
+    id: "zig-zag-floating-corner-shelf",
+    productName: "Zig Zag Engineered Wood Floating Corner Rack Shelves",
+    image: "/images/articles/bathroom-decor-organizer-1/zig-zag-floating-corner-shelf.jpg",
+    shortDescription:
+      "Set of floating corner shelves in engineered wood. Available in multiple colors. Perfect for living rooms and bedrooms.",
+    whyPeopleLoveIt:
+      "These corner shelves make brilliant use of often-wasted corner space. The zig-zag design adds visual interest while providing practical storage.",
+    benefits: [
+      "Engineered wood construction",
+      "Set of multiple shelves",
+      "Fits nicely in corners",
+      "Available in multiple colors",
+      "Great for small spaces",
+    ],
+    affiliateLink: "https://amzn.to/4w3kzig",
+    editorPick: false,
+    budgetPick: true,
+    category: "home-decor",
+    priceHint: "Under ₹900",
+  },
+  {
+    id: "aakriti-handcrafted-geometric-lamp",
+    productName: "AAKRITI ART CREATIONS Handcrafted Wooden Table Lamp",
+    image: "/images/articles/bathroom-decor-organizer-1/aakriti-handcrafted-geometric-lamp.jpg",
+    shortDescription:
+      "Handcrafted wooden table lamp with geometric tribal design and rattan shade. Perfect for living rooms and bedside tables.",
+    whyPeopleLoveIt:
+      "This handcrafted lamp is a statement piece that brings bohemian charm to any room. The geometric tribal design is unique and eye-catching.",
+    benefits: [
+      "Handcrafted wooden construction",
+      "Geometric tribal design",
+      "Rattan shade adds texture",
+      "Perfect for bohemian or eclectic decor",
+      "Works well as bedside or accent lamp",
+    ],
+    affiliateLink: "https://amzn.to/4dkoAHE",
+    editorPick: true,
+    budgetPick: false,
+    category: "home-decor",
+    priceHint: "Premium Pick, Under ₹2,800",
   },
   // {
   //   id: "ribbed-glass-vase",
