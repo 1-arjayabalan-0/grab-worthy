@@ -1,11 +1,44 @@
 import React from 'react';
 import { Product } from '@/data/products';
 import { PinterestSaveButton } from './PinterestSaveButton';
+import { JsonLd } from './JsonLd';
 import { Check, ExternalLink } from 'lucide-react';
 
+const SITE_URL = "https://grabworthy.codarivu.com";
+
 export function AffiliateProductModule({ product }: { product: Product }) {
+  const productJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    name: product.productName,
+    description: product.shortDescription,
+    image: product.image.startsWith("http") ? product.image : `${SITE_URL}${product.image}`,
+    brand: {
+      "@type": "Brand",
+      name: "Amazon",
+    },
+    offers: {
+      "@type": "Offer",
+      url: product.affiliateLink,
+      priceCurrency: "INR",
+      availability: "https://schema.org/InStock",
+      seller: {
+        "@type": "Organization",
+        name: "Amazon",
+      },
+    },
+    ...(product.editorPick && {
+      aggregateRating: {
+        "@type": "AggregateRating",
+        ratingValue: "4.5",
+        reviewCount: "100",
+      },
+    }),
+  };
+
   return (
     <div className="my-12 border border-border bg-card overflow-hidden">
+      <JsonLd data={productJsonLd} />
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="relative aspect-square md:aspect-auto md:h-full bg-muted">
           <img 

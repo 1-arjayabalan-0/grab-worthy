@@ -1,9 +1,29 @@
 import { EditorialArticleCard } from "@/components/site/EditorialArticleCard";
 import { blogPosts } from "@/data/blogs";
+import type { Metadata } from "next";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Journal",
   description: "Explore our curated collection of editorial articles and product discoveries.",
+  alternates: {
+    canonical: "/blog/",
+  },
+  openGraph: {
+    title: "The Journal | Grab Worthy",
+    description: "Explore our curated collection of editorial articles and product discoveries.",
+    url: "https://grabworthy.codarivu.com/blog/",
+    siteName: "Grab Worthy",
+    images: [
+      {
+        url: "https://grabworthy.codarivu.com/opengraph.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Grab Worthy Journal",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
 };
 
 export default function BlogIndex() {
