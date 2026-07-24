@@ -6,9 +6,13 @@ import { AffiliateProductModule } from "@/components/site/AffiliateProductModule
 import { FAQAccordion } from "@/components/site/FAQAccordion";
 import { StickyAffiliateCTA } from "@/components/site/StickyAffiliateCTA";
 import { NewsletterCTA } from "@/components/site/NewsletterCTA";
+import { JsonLd } from "@/components/site/JsonLd";
+import { SocialShareButtons } from "@/components/site/SocialShareButtons";
 import { getCategoryBySlug } from "@/data/categories";
 import { BlogPost } from "@/data/blogs";
 import { Product } from "@/data/products";
+
+const SITE_URL = "https://grabworthy.codarivu.com";
 
 interface ArticleProps {
   article: BlogPost;
@@ -19,8 +23,98 @@ export function Article({ article, relatedProducts = [] }: ArticleProps) {
   const category = getCategoryBySlug(article.category);
   const topProduct = relatedProducts.find((p) => p.editorPick) || relatedProducts[0];
 
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: article.title,
+    description: article.metaDescription,
+    image: article.featuredImage.startsWith("http")
+      ? article.featuredImage
+      : `${SITE_URL}${article.featuredImage}`,
+    datePublished: article.publishedDate,
+    dateModified: article.publishedDate,
+    author: {
+      "@type": "Organization",
+      name: "Grab Worthy",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Grab Worthy",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/opengraph.jpg`,
+      },
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/blog/${article.slug}/`,
+    },
+    ...(category && {
+      about: {
+        "@type": "Thing",
+        name: category.name,
+      },
+    }),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: `${SITE_URL}/`,
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Journal",
+        item: `${SITE_URL}/blog/`,
+      },
+      ...(category
+        ? [
+            {
+              "@type": "ListItem",
+              position: 3,
+              name: category.name,
+              item: `${SITE_URL}/category/${category.slug}/`,
+            },
+          ]
+        : []),
+      {
+        "@type": "ListItem",
+        position: category ? 4 : 3,
+        name: article.title,
+        item: `${SITE_URL}/blog/${article.slug}/`,
+      },
+    ],
+  };
+
+  const faqJsonLd =
+    article.faq.length > 0
+      ? {
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: article.faq.map((item) => ({
+            "@type": "Question",
+            name: item.question,
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: item.answer,
+            },
+          })),
+        }
+      : null;
+
   return (
     <article className="pb-16 md:pb-24">
+      <JsonLd data={articleJsonLd} />
+      <JsonLd data={breadcrumbJsonLd} />
+      {faqJsonLd && <JsonLd data={faqJsonLd} />}
       {/* Magazine Style Hero */}
       <div className="container mx-auto px-4 pt-8 md:pt-12 pb-8">
         <Breadcrumbs
@@ -132,6 +226,14 @@ export function Article({ article, relatedProducts = [] }: ArticleProps) {
           {article.closing.map((p, i) => (
             <p key={i}>{p}</p>
           ))}
+
+          {/* Social Share */}
+          <div className="not-prose mt-8 pt-8 border-t border-border">
+            <SocialShareButtons
+              url={`/blog/${article.slug}`}
+              title={article.title}
+            />
+          </div>
         </div>
       </div>
 

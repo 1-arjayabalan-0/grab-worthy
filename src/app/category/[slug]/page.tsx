@@ -16,6 +16,27 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${category.name} Finds & Reviews`,
     description: category.tagline,
+    alternates: {
+      canonical: `/category/${slug}/`,
+    },
+    openGraph: {
+      title: `${category.name} Finds & Reviews | Grab Worthy`,
+      description: category.tagline,
+      url: `https://grabworthy.codarivu.com/category/${slug}/`,
+      siteName: "Grab Worthy",
+      images: [
+        {
+          url: category.heroImage.startsWith("http")
+            ? category.heroImage
+            : `https://grabworthy.codarivu.com${category.heroImage}`,
+          width: 1200,
+          height: 630,
+          alt: category.name,
+        },
+      ],
+      locale: "en_US",
+      type: "website",
+    },
   };
 }
 
