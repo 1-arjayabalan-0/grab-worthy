@@ -10,6 +10,7 @@ export type Product = {
   budgetPick: boolean;
   category: string;
   priceHint?: string;
+  price: number;
 };
 
 const placeholderLink = "https://www.amazon.com/dp/PLACEHOLDER";
@@ -36,6 +37,7 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Premium Pick, Under ₹12,000",
+    price: 12000,
   },
   {
     id: "outnili-wall-mount-organizer",
@@ -57,6 +59,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Best Pick, Under ₹5,500",
+    price: 5500,
   },
   {
     id: "olanly-chenille-bath-rug",
@@ -78,6 +81,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Best Value, Under ₹5,600",
+    price: 5600,
   },
   {
     id: "yikbik-rgb-floor-lamp",
@@ -102,6 +106,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "under ₹2,000",
+    price: 2000,
   },
   {
     id: "floating-shelves-set",
@@ -122,6 +127,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹400",
+    price: 400,
   },
   {
     id: "hanging-rope-shelf",
@@ -142,6 +148,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹300",
+    price: 300,
   },
   {
     id: "hexagon-wall-stickers",
@@ -162,6 +169,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Below ₹300",
+    price: 300,
   },
   {
     id: "golden-wall-clock",
@@ -182,6 +190,7 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Under ₹400",
+    price: 400,
   },
   {
     id: "macrame-wall-hanging",
@@ -202,6 +211,7 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Under ₹700",
+    price: 700,
   },
   {
     id: "sehaz-artworks-stylish-wall-decor",
@@ -223,6 +233,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹300",
+    price: 300,
   },
   {
     id: "sehaz-wall-hanging-decoration",
@@ -244,6 +255,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹200",
+    price: 200,
   },
   {
     id: "funny-kitchen-hindi-quote",
@@ -265,6 +277,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹200",
+    price: 200,
   },
   {
     id: "oxmic-wood-display-riser",
@@ -286,6 +299,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹200",
+    price: 200,
   },
   {
     id: "artvibes-mummy-ka-dhaba-wall-art",
@@ -307,6 +321,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹200",
+    price: 200,
   },
   // ---------------------- MAKEUP ORGANIZERS ----------------------
   {
@@ -329,6 +344,7 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Premium Pick, Under ₹600",
+    price: 600,
   },
   {
     id: "jialto-bathroom-organizer-no-drill",
@@ -350,6 +366,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Best Value, Under ₹550",
+    price: 550,
   },
   {
     id: "zuku-storage-box-basket-4pcs",
@@ -371,6 +388,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Budget Pick, Under ₹250",
+    price: 250,
   },
   {
     id: "misamo-aluminium-bathroom-shelf",
@@ -392,6 +410,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹550",
+    price: 550,
   },
   // ---------------------- BEDROOM DECOR ACCESSORIES ----------------------
   {
@@ -414,6 +433,7 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Premium Pick, Under ₹1,400",
+    price: 1400,
   },
   {
     id: "artvibes-cute-couple-wall-hanging",
@@ -435,6 +455,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹200",
+    price: 200,
   },
   {
     id: "zig-zag-floating-corner-shelf",
@@ -456,6 +477,7 @@ export const products: Product[] = [
     budgetPick: true,
     category: "home-decor",
     priceHint: "Under ₹900",
+    price: 900,
   },
   {
     id: "aakriti-handcrafted-geometric-lamp",
@@ -477,6 +499,7 @@ export const products: Product[] = [
     budgetPick: false,
     category: "home-decor",
     priceHint: "Premium Pick, Under ₹2,800",
+    price: 2800,
   },
   // {
   //   id: "ribbed-glass-vase",

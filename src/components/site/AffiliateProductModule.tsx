@@ -21,19 +21,13 @@ export function AffiliateProductModule({ product }: { product: Product }) {
       "@type": "Offer",
       url: product.affiliateLink,
       priceCurrency: "INR",
+      price: product.price,
       availability: "https://schema.org/InStock",
       seller: {
         "@type": "Organization",
         name: "Amazon",
       },
     },
-    ...(product.editorPick && {
-      aggregateRating: {
-        "@type": "AggregateRating",
-        ratingValue: "4.5",
-        reviewCount: "100",
-      },
-    }),
   };
 
   return (
